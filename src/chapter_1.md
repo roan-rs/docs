@@ -1,0 +1,22 @@
+# Chapter 1
+
+```roan
+use { String } from "std::string"
+use { println } from "std::debug"
+
+fn print(text: string, ...args: anytype) -> void {
+    println(text, ...args);
+}
+
+pub fn main() -> int {
+    let x = String::to_bool("true1");
+
+    print("Hello, world! {}", x);
+
+    return 0;
+}
+
+main();
+
+```
+
